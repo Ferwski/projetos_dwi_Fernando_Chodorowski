@@ -13,42 +13,33 @@
 </head>
 
 <body>
-    <!--
-    <main id="resultado1">
-        <div id="buscas">
-            <input id="" type="text">
-            <button onclick="buscar_poke()">Buscar</button>
-        </div>
-        <div id="card">
-            <div id="imagem">
-                <img width="220px" id="img_pokemon" src="" alt="">
-            </div>
-            <div id="infos">
-                <h2 id="nome"></h2>
-                <h3 id="tipos"></h3>
-                <h3 id="skills"></h3>
-            </div>
-        </div>
-    </main>
-    -->
-    <div id="site-grid-container">
+    <main id="site-grid-container">
 
         <div class="area main-grid-item main-flex-cotainer">
             <div class="container-busca">
                 <div id="pesq_centr">
-                    <div>Pesquisar:</div>                      
-                    <input type="text" name="" id="nome_pokemon">
+                    <div>Pesquisar:</div>
+                    <input type="text" id="nome_pokemon">
                 </div>
                 <div id="btn_centr">
-                    <button id="btn">Buscar</button>
+                    <button id="btn" onclick="buscar_pokemon()">Buscar</button>
                 </div>
             </div>
             <div class="pokedex">
-                <div class="visor"></div>
-                <div class="botoes"></div>
+                <div class="visor">
+                    <img width="220px" id="img_pokemon" src="" alt="">
+                </div>
+                <div class="botoes">
+                    <h2>Nome:</h2>
+                    <div id="nome"></div>
+                    <h2>Tipos:</h2>
+                    <span id="tipo"></span>
+                    <h2>Skills:</h2>
+                    <div id="skill"></div>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>
